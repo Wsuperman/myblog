@@ -1,0 +1,19 @@
+// 混合样式组件
+
+//绝对定位，居中
+.self-center(@pos: absolute) {
+    // 传参，默认是@pos
+    position: @pos;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//图片填充 充满
+.self-fill(@pos:absolute) {
+    position: @pos;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
